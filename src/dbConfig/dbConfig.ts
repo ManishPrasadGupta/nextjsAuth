@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 
 export async function connect() {
     try {
-        // here in the below line --> usig `!` to assigned guaranteed that `process.env` will come.
+  
         mongoose.connect(process.env.MONGO_URL!)
         const connection =  mongoose.connection
 
